@@ -1,0 +1,250 @@
+%-------------------------
+% Resume in Latex
+% Author : Narumedsr Pitayachamrat
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Narumedsr Pitayachamrat} \\ \vspace{2pt}
+    \small 
+    \raisebox{-0.1\height}\faPhone\ (+66) 093-575-6655 ~ 
+    \href{mailto:narumedsr.p@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{narumedsr.p@gmail.com}} ~ 
+    \href{https://linkedin.com/in/narumedsr-p}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/narumedsr-p}} \\ \vspace{3pt}
+    \href{https://github.com/narumedsr-p}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/narumedsr-p}} ~
+    \href{https://narumedsr-p.github.io/}{\raisebox{-0.2\height}\faGlobe\ \underline{narumedsr-p.github.io}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Chulalongkorn University GPA: 3.96}{Aug 2024 -- Present}
+      {Bachelor of Engineering in Computer Engineering}{Bangkok, Thailand}
+    \resumeSubheading
+      {Triam Udom Suksa Phatthanakan School GPA: 3.99}{May 2018 -- March 2023}
+      {Sci-Math Program}{Bangkok, Thailand}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Operating System
+                \item Algorithms Design
+                \item Database System
+                \item Computer Architecture
+                \item Program Methodology
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Bash, C++, Java, Python, JavaScript, TypeScript, SQL} \\
+     \textbf{Developer Tools}{: VS Code, Git, Postman, Docker} \\
+     \textbf{Infrastructure}{: Linux, AWS, Grafana, GitHub Actions} \\
+     \textbf{Web Frameworks}{: Spring Boot, Express, Next.js, Hono, Elysia} \\
+     \textbf{Database}{: MySQL, PostgreSQL, MongoDB, Redis, Prisma, Drizzle} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IFCG Public Company Limited (IFCG)}{May 2026 -- Present}
+      {Backend and Infrastructure Developer}{Bangkok, Thailand}
+      \resumeItemListStart
+        \resumeItem{Designed scalable backend architecture and infrastructure using microservices for internal company operations, delivering core services such as HR management, timesheets, and PDF autofill.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Thailand Incubator Club (Thinc.) - CuGetRegV2}{September 2025 -- Present}
+      {Backend and Infrastructure Developer}{Bangkok, Thailand}
+      \resumeItemListStart
+        \resumeItem{Architecting and developing the next-generation platform (V2) to replace cugetreg.com (V1).}
+        \resumeItem{Developing Backend v2 with a target capacity of 40,000 monthly traffic, utilizing Hono, Prisma, PostgreSQL for optimized performance.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Teacher Assistance (TA) of 2110101 Computer Programming}{Aug 2025 -- December 2025}
+      {Teacher Assistance of Chulalongkorn University}{Bangkok, Thailand}
+      \resumeItemListStart
+        \resumeItem{Guided students through programming assignments during class sessions.}
+        \resumeItem{Provided after-class assistance and answered questions via Discord.}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Senior Backend of FECamp 19th Chula Engineering} $|$ \emph{SpringBoot, PostgreSQL, AWS}}{November 2025 -- May 2026}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a scalable RESTful API for a Learning Management System (LMS) using Spring Boot and PostgreSQL, supporting real-time Q\&A interactions for 500 concurrent users.}
+            \resumeItem{Deployed using AWS EC2, S3, Supabase PostgreSQL, and Grafana for monitoring.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Buddy Budder Website for Computer Engineering Student -- Backend} $|$ \emph{Next.js,Prisma,MongoDB}}{August 2025}
+          \resumeItemListStart
+            \resumeItem{Developed website where 100 Computer Engineering students can guess budder and receive buddy hints.}
+            \resumeItem{Implemented backend using Next.js, Prisma, and MongoDB, ensuring seamless integration with frontend development.}
+            \resumeItem{Deployed the website via Vercel and maximized the efficiency of the backend code.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Automatic Speech Recognition Khummuang - Prof. Ekapol Chuangsuwanich} $|$ \emph{Espnet}}{September 2025}
+          \resumeItemListStart
+            \resumeItem{Learned ASR concepts by taking a course at Chulalongkorn University and the Speech Recognition and Understanding online course from Carnegie Mellon University (CMU).}
+            \resumeItem{Trained an Automatic Speech Recognition (ASR) model for the Khummuang language using EspnetEz.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Competition}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Thailand Insurance Case Competition 2025 -- 3rd Runner Up}}{June 2025 -- July 2025}
+          \resumeItemListStart
+            \resumeItem{Designed an AI-driven web solution to enhance insurance customer experience, balancing business feasibility and customer needs.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+     \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+\end{document}
